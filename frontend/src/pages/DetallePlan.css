@@ -1,0 +1,35 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+.tab-button {
+  flex: 1;
+  margin: 0;
+  border-right: 1px solid white;
+  background-color: white;
+  color: black;
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-button:last-child {
+  border-right: none;
+}
+
+.tab-button:hover {
+  background-color: #f9fcfb;
+}
+
+.tab-button.active {
+  background-color: #055d3f;
+  color: white;
+  border-bottom: 3px solid #055d3f;
+  margin-bottom: -2px;
+}

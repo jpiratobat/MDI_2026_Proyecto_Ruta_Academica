@@ -1,0 +1,148 @@
+/* Materias.css - Estilos basados en mockup pmv2_2
+	 - Presenta un encabezado con botón Agregar
+	 - Lista de materias en filas tipo tarjeta/table
+	 - Botones claramente diferenciados: Agregar (verde) y Eliminar (rojo)
+*/
+
+.Materias {
+	padding: 20px;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	color: #21332a;
+	background: linear-gradient(180deg, #f8fff9 0%, #ffffff 100%);
+}
+
+.Materias h3 {
+	margin: 0 0 12px 0;
+	color: #045b3f;
+	font-size: 20px;
+}
+
+.materias-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 14px;
+}
+
+.materias-actions {
+	display:flex;
+	gap: 8px;
+}
+
+.btn-add {
+	background: #06784f;
+	color: white;
+	border: none;
+	padding: 10px 14px;
+	border-radius: 8px;
+	font-weight: 700;
+	cursor: pointer;
+	box-shadow: 0 6px 18px rgba(6,120,79,0.08);
+}
+
+.btn-add:hover { background:#055a40 }
+
+.materias-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.materia-card {
+	display: grid;
+	grid-template-columns: 1fr 160px 120px;
+	gap: 12px;
+	align-items: center;
+	padding: 14px 16px;
+	border-radius: 10px;
+	background: #ffffff;
+	border: 1px solid #e6efe8;
+	box-shadow: 0 4px 12px rgba(2, 38, 26, 0.04);
+}
+
+.materia-left {
+	display:flex;
+	flex-direction:column;
+}
+
+.materia-name {
+	font-size: 16px;
+	font-weight: 700;
+	color: #056343;
+}
+
+.materia-code {
+	font-size: 13px;
+	color: #6b786f;
+	margin-top: 4px;
+}
+
+.materia-credits {
+	font-weight: 700;
+	color: #334b3f;
+	text-align: right;
+}
+
+.materia-center {
+	font-size: 14px;
+	color: #556b60;
+	text-align: center;
+}
+
+.materia-actions {
+	display:flex;
+	gap: 8px;
+	justify-content: flex-end;
+}
+
+.btn-remove {
+	background: #056343;
+	color: white;
+	border: none;
+	padding: 8px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.btn-remove:hover { background: #e64b4b }
+
+.create-materia {
+	margin-top: 16px;
+	display:flex;
+	gap: 8px;
+	align-items:center;
+}
+
+.create-materia input {
+	padding: 10px 12px;
+	border-radius: 8px;
+	border: 1px solid #dfe7e1;
+	background: #fbfffb;
+}
+
+.btn-create {
+	background: #06784f;
+	color: white;
+	padding: 10px 14px;
+	border-radius: 8px;
+	border:none;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.create-actions { display:flex; }
+
+.note { margin-bottom:8px; color:#6b6b6b; }
+.page-placeholder { padding:20px; color:#666; }
+.materia-credits-mat { 
+	text-align: left;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+
+@media (max-width: 720px) {
+	.materia-card { grid-template-columns: 1fr; gap:8px; }
+	.materia-actions { justify-content: flex-start; }
+	.materias-toolbar { flex-direction: column; align-items: stretch; gap:8px; }
+}

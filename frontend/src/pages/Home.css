@@ -1,0 +1,257 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.search_bar_cont {
+  display: flex;
+  background-color: #7abc9b;
+  padding: 20px;
+  margin: auto;
+
+}
+
+.title_cont {
+  background-color: #06784f;
+  font-family: "press start 2p", monospace;
+  font-size: 30px;
+  color:white;
+  padding: 20px;
+  text-align: center;
+}
+
+.vert_cont{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.vert_cont.left {
+  background-color: #eeffe6;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.vert_cont.right {
+  position: relative;
+  background-color: white;
+  flex: 1;
+  padding: 20px;
+  align-items: center;;
+  text-align: center;
+  font-size: 20px;
+}
+
+.unlogo {
+  position: absolute;
+  inset: 0;
+  margin: 20px;
+  background-image: url("../img/unlogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1;
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilos para header de planes y botón crear */
+.plans_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.plans_header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #06784f;
+  flex-shrink: 0;
+}
+
+.btn-crear-plan {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #06784f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.btn-crear-plan:hover {
+  background-color: #055a40;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-crear-plan:active {
+  transform: translateY(0);
+}
+
+/* Estilos para formulario de creación */
+.create-plan-form {
+  background-color: white;
+  border: 2px solid #06784f;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-plan-form h3 {
+  margin-top: 0;
+  color: #06784f;
+  font-size: 18px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #06784f;
+  box-shadow: 0 0 4px rgba(6, 120, 79, 0.2);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-confirm,
+.btn-cancel {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-confirm {
+  background-color: #06784f;
+  color: white;
+}
+
+.btn-confirm:hover {
+  background-color: #055a40;
+}
+
+.btn-cancel {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background-color: #bbb;
+}
+
+/* Estilos para contenedor de planes */
+.plans-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.plan-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card:hover {
+  box-shadow: 0 4px 12px rgba(6, 120, 79, 0.3);
+  border-color: #06784f;
+  transform: translateY(-2px);
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.plan-header h3 {
+  margin: 0;
+  color: #06784f;
+  font-size: 16px;
+  flex: 1;
+}
+
+.plan-code {
+  background-color: #f0f0f0;
+  color: #666;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.plan-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn-ver-resumen {
+  background-color: #0b8f5a;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-ver-resumen:hover { background-color: #06784f; }
+
+.plan-credits {
+  color: #555;
+  font-size: 14px;
+}
+
+.plan-credits strong {
+  color: #06784f;
+}
+
+.no-results {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+  font-size: 16px;
+}
+
