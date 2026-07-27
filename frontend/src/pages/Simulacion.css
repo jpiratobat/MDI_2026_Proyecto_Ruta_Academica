@@ -1,0 +1,166 @@
+/* Simulacion.css - estilo fiel al mockup pmv2_5 */
+.Simulacion {
+  padding: 20px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: #21332a;
+  background: #fbfff9;
+}
+
+.Simulacion h2 {
+  margin: 0 0 16px 0;
+  color: #045b3f;
+  font-size: 24px;
+}
+
+.sim-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sim-controls label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 600;
+  color: #21332a;
+}
+
+.sim-controls input[type="number"] {
+  width: 80px;
+  padding: 8px 10px;
+  border: 1px solid #dfe7e1;
+  border-radius: 8px;
+  background: #fbfffb;
+  font-size: 14px;
+}
+
+.btn-calc {
+  background: #06784f;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn-calc:hover {
+  background: #055a40;
+}
+
+.btn-calc:disabled {
+  background: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.error-note {
+  background: #fdf2f2;
+  border-left: 4px solid #a94442;
+  color: #a94442;
+  padding: 12px 14px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.semestres-container {
+  margin-top: 20px;
+}
+
+.result-title {
+  margin: 0 0 14px 0;
+  color: #045b3f;
+  font-size: 18px;
+}
+
+.semestres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.semestre-card {
+  background: #fff;
+  border: 1px solid #e6efe8;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(2, 38, 26, 0.04);
+  padding: 14px;
+}
+
+.semestre-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0fff6;
+}
+
+.semestre-header h4 {
+  margin: 0;
+  color: #056343;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.materias-count {
+  background: #f0fff6;
+  color: #056343;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.semestre-materias {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.materia-item {
+  background: #f9fcfb;
+  border: 1px solid #e6efe8;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.materia-code {
+  color: #056343;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.empty-msg {
+  color: #9b9b9b;
+  font-size: 13px;
+  font-style: italic;
+  padding: 8px;
+}
+
+.page-placeholder {
+  padding: 20px;
+  color: #666;
+}
+
+.materia-credits {
+  margin-left: auto;
+  text-align: right;
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .semestres-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sim-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

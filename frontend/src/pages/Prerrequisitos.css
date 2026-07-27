@@ -1,0 +1,114 @@
+/* Prerrequisitos.css - estilo fiel al mockup pmv2_3
+	 - Lista de filas donde se ve la materia objetivo y sus prerrequisitos
+	 - Tarjetas con dos columnas: Materia a cursar | Prerrequisitos (badges)
+	 - Botones para eliminar relación y panel para agregar
+*/
+
+.Prerrequisitos {
+	padding: 20px;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	color: #21332a;
+	background: #fbfff9;
+}
+
+.Prerrequisitos h3 { margin:0 0 12px 0; color:#045b3f }
+
+.relations-list {
+	display:flex;
+	flex-direction:column;
+	gap: 12px;
+}
+
+.relation-card {
+	display: grid;
+	grid-template-columns: 1fr 2fr 120px;
+	gap: 12px;
+	align-items: center;
+	padding: 14px;
+	border-radius: 10px;
+	background: #fff;
+	border: 1px solid #e6efe8;
+	box-shadow: 0 6px 18px rgba(2,38,26,0.04);
+}
+
+.relation-materia {
+	display:flex;
+	flex-direction:column;
+}
+.relation-materia .name { font-weight:700; color:#056343; font-size:15px }
+.relation-materia .code { font-size:13px; color:#6b786f }
+
+.relation-prereqs {
+	display:flex;
+	gap:8px;
+	flex-wrap:wrap;
+}
+.prereq-badge {
+	background:#f0fff6;
+	border:1px solid #d7f3e4;
+	color:#056343;
+	padding:6px 12px 6px 10px;
+	border-radius: 999px;
+	font-weight:600;
+	font-size:13px;
+	position:relative;
+	display:inline-flex;
+	align-items:center;
+	gap:8px;
+}
+
+.prereq-badge .badge-code { font-weight:600; color:#2f6f56; opacity:0.9; font-size:12px }
+
+.btn-del-small {
+	background:transparent;
+	border:none;
+	color:#9b2b2b;
+	font-weight:700;
+	width:20px;
+	height:20px;
+	line-height:18px;
+	border-radius:999px;
+	cursor:pointer;
+	padding:0;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+}
+.btn-del-small:hover { background: rgba(155,43,43,0.08); color:#7a1f1f }
+
+.relation-actions { text-align:right }
+.btn-del { background:#ff6161; color:white; border:none; padding:8px 10px; border-radius:8px; cursor:pointer; font-weight:700 }
+.btn-del:hover { background:#e64b4b }
+
+.add-relation {
+	margin-top:18px;
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 8px;
+	align-items:center;
+	max-width: 920px;
+	width: 100%;
+}
+.add-relation select {
+	padding:10px;
+	border-radius:8px;
+	border:1px solid #dfe7e1;
+	background:#fbfffb;
+	min-width: 0;
+	width: 100%;
+}
+.add-relation .add-actions {
+	grid-column: 1 / span 3;
+	display: flex;
+	justify-content: flex-end;
+}
+.btn-add { background:#06784f; color:white; padding:10px 12px; border-radius:8px; border:none; cursor:pointer; font-weight:700 }
+
+.note { margin-top:10px; color:#6b6b6b }
+.page-placeholder { padding:20px; color:#666 }
+
+@media (max-width: 760px) {
+	.relation-card { grid-template-columns: 1fr; }
+	.add-relation { grid-template-columns: 1fr; }
+	.relation-actions { text-align:left }
+}

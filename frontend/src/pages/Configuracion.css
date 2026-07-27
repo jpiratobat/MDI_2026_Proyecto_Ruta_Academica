@@ -1,0 +1,48 @@
+.Configuracion { 
+    padding: 16px; 
+}
+
+.config-row { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    margin-bottom: 10px; 
+}
+
+.config-row label { 
+    width: 300px; 
+    color: #055d3f;
+    font-family: "Space Mono", monospace;
+
+}
+
+.config-row input { 
+    padding: 8px; 
+    border-radius: 20px; 
+    border: 3px solid #055d3f;
+}
+
+.config-actions { 
+    margin-top: 12px; 
+}
+
+.btn-save { 
+    background: #055d3f;
+    color: white;
+    font-family: "Space Mono", monospace;
+    padding: 8px 12px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+}
+
+.explain { 
+    margin-top: 12px; 
+    color: #555; 
+    font-size: 13px; 
+}
+
+.note { 
+    color:#666; 
+    margin-bottom:8px; 
+}
