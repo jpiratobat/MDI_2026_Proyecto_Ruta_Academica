@@ -1,0 +1,170 @@
+
+
+Materias Ingenieria de Sistemas y Computación
+
+courses = [
+    "Cálculo diferencial" 4 , 
+    "Cálculo integral" 4, 
+    "Fund. Mecánica" 4,
+    "Álgebra lineal" 4,
+    "Fund. Elect. y Magnet." 4,
+    "Cálculo multivariado" 4,
+    "Prob. y estadística (fund.)" 3,
+    "Métodos numéricos" 3,
+    "Discretas I" 4,
+    "Discretas II" 4,
+    "Programación de Computadores" 3,
+    "POO" 3,
+    "Intro. teoría de la computación" 4,
+    "Estructuras de datos" 3,
+    "Bases de datos" 3,
+    "Pensamiento sistémico" 3,
+    "Intro. Ing. de Sistemas y computación" 3,
+    "Elementos de computadores" 3,
+    "Arq. de computadores" 3,
+    "Sistemas operativos" 3,
+    "Redes de computadores" 3,
+    "Modelos y simulación" 3,
+    "Optimización" 3,
+    "Modelos estocásticos" 3,
+    "Lenguajes de programación" 3,
+    "Algoritmos" 3,
+    "Teoría de la Información" 3,
+    "Comp. Visual" 3,
+    "Comp. Paralela" 3,
+    "Intro. Cripto. y seguridad de la Info." 3,
+    "Intro. Sistemas Inteligentes" 3,
+    "Sistemas de Información" 3,
+    "Ingesoft I" 3,
+    "Ingesoft II" 3,
+    "Arquisoft" 3,
+    "ArquiTICS" 3,
+    "Ing. económica" 3,
+    "Gerencia y gestión de P." 3,
+]
+
+prereqs = {
+    "Cálculo diferencial": set(),
+    "Cálculo integral": {"Cálculo diferencial"},
+    "Fund. Mecánica": {"Cálculo diferencial"},
+    "Álgebra lineal": {"Cálculo diferencial"},
+    "Fund. Elect. y Magnet.": {"Cálculo integral", "Fund. Mecánica"},
+    "Cálculo multivariado": {"Cálculo integral"},
+    "Prob. y estadística (fund.)": {"Cálculo integral"},
+    "Métodos numéricos": {"Cálculo multivariado"},
+    "Discretas I": {"Álgebra lineal"},
+    "Discretas II": {"Discretas I"},
+    "Programación de Computadores": set(),
+    "POO": {"Programación de Computadores"},
+    "Intro. teoría de la computación": {"Discretas I"},
+    "Estructuras de datos": {"POO"},
+    "Bases de datos": {"POO"},
+    "Pensamiento sistémico": set(),
+    "Intro. Ing. de Sistemas y computación": set(),
+    "Elementos de computadores": {"Intro. Ing. de Sistemas y computación"},
+    "Arq. de computadores": {"Elementos de computadores"},
+    "Sistemas operativos": {"Arq. de computadores"},
+    "Redes de computadores": {"Estructuras de datos","Fund. Elect. y Magnet.","Arq. de computadores"},
+    "Modelos y simulación": {"Prob. y estadística (fund.)","Cálculo multivariado","Discretas II","POO"},
+    "Optimización": {"Modelos y simulación"},
+    "Modelos estocásticos": {"Modelos y simulación"},
+    "Lenguajes de Programacion": {"Intro. teoría de la computación", "Estructuras de datos"},
+    "Algoritmos": {"Prob. y estadística (fund.)", "Discretas II", "Estructuras de datos"},
+    "Teoría de la Información": {"Prob. y estadística (fund.)", "Redes de computadores"},
+    "Comp. Visual": {"Algoritmos","Teoría de la Información"},
+    "Comp. Paralela": {"Algoritmos"},
+    "Intro. Cripto. y seguridad de la Info.": {"Algoritmos"},
+    "Intro. Sistemas Inteligentes": {"Algoritmos"},
+    "Sistemas de Información": {"Bases de datos", "Pensamiento sistémico"},
+    "Ingesoft I": {"Estructuras de datos", "Bases de datos", "Pensamiento sistémico"},
+    "Ingesoft II": {"Ingesoft I", "Redes de computadores"},
+    "Arquisoft": {"Ingesoft II"},
+    "ArquiTICS": {"Ingesoft II"},
+    "Ing. económica": {"Cálculo integral"},
+    "Gerencia y gestión de P.": {"Ing. económica"},
+}
+
+
+Materias Ingenieria Electrica
+courses = [
+	"Cálculo diferencial" 4 , 
+	"Cálculo integral" 4, 
+	"Fund. Mecánica" 4,
+	"Álgebra lineal" 4,
+	"Fund. Elect. y Magnet." 4,
+	"Cálculo multivariado" 4,
+	"Programación de Computadores" 3,
+	"Introduccion a la Ingenieria Electrica" 5,
+	"Taller de Ingenieria Electrica" 2,
+	"Ecuaciones Diferenciales" 4,
+	"Introducción a la ciencia de materiales" 3,
+	"Circuitos Electricos I" 3,
+	"Variable Compleja" 4,
+	"Fundamentos de mecánica de Fluidos" 3,
+	"Campos Electromagneticos" 4,
+	"Electronica Analoga I" 4,
+	"Optativa Probabilidad y Estadistica" 3,
+	"Señales y Sistemas I" 3,
+	"Fundamentos de Oscilaciones y Ondas" 4,
+	"Circuitos Electricos II" 4,
+	"Electronica Digital I" 4,
+	"Asignatura Optativa (Herramientas Ing)" 3,
+	"Señales y Sistemas II" 3,
+	"Conversión Electromagnetica" 3,
+	"Transmisión y Distribución" 3,
+	"Mecanica para Ingenieria" 3,
+	"Ing. económica" 3,
+	"Control" 4,
+	"Introduccion a Sistemas de Energia Electrica" 3,
+	"Instalaciones Electricas" 3,
+	"Taller de Ingenieria" 3,
+	"Optativa Administración I" 3,
+	"Asignatura Optativa (Electrotecnia)" 3,
+	"Análisis de Sistemas de Potencia " 3,
+	"Optativa Administración II" 3,
+	"Asignatura Optativa (Sistemas de Potencia)" 3,
+	"Asignatura Optativa (Innovación e Investigación)" 3
+]
+
+prereqs = {
+	"Cálculo diferencial": set() , 
+        "Cálculo integral": {"Cálculo diferencial"},
+        "Fund. Mecánica": {"Cálculo diferencial"},
+        "Álgebra lineal": {"Cálculo diferencial"},
+        "Fund. Elect. y Magnet.": {"Cálculo integral", "Fund. Mecánica"},
+        "Cálculo multivariado": {"Cálculo integral"},
+	"Programación de Computadores": set(),
+	"Introduccion a la Ingenieria Electrica": set(),
+	"Taller de Ingenieria Electrica" : set(),
+	"Ecuaciones Diferenciales" : {"Cálculo integral", "Álgebra lineal"}
+	"Introducción a la ciencia de materiales": {Fund. Mecánica},
+	"Circuitos Electricos I" : {"Taller de Ingenieria Electrica", "Álgebra lineal"},
+	"Variable Compleja": {"Ecuaciones Diferenciales"}
+	"Fundamentos de mecánica de Fluidos": {"Ecuaciones Diferenciales", "Fund. Mecánica"},
+	"Campos Electromagneticos": {"Fund. Elect. y Magnet.", "Cálculo multivariado"}
+	"Electronica Analoga I": {"Circuitos Electricos I"},
+	"Optativa Probabilidad y Estadistica": {"Cálculo integral"},
+	"Señales y Sistemas I" : {"Circuitos Electricos I", "Ecuaciones Diferenciales"}
+	"Fundamentos de Oscilaciones y Ondas": {"Ecuaciones Diferenciales","Fund. Mecánica"}
+	"Circuitos Electricos II": {"Ecuaciones Diferenciales" , "Circuitos Electricos I"}
+	"Electronica Digital I": {"Electronica Analoga I"}
+	"Asignatura Optativa (Herramientas Ing)": {
+"Ecuaciones Diferenciales", "Programación de Computadores", "Cálculo multivariado", "Optativa Probabilidad y Estadistica"}
+	"Señales y Sistemas II": {"Señales y Sistemas I", "Variable Compleja"}
+	"Conversión Electromagnetica": {"Circuitos Electricos II", "Cálculo multivariado"}
+	"Transmisión y Distribución": {"Circuitos Electricos II", "Cálculo multivariado"},
+	"Mecanica para Ingenieria": {Álgebra lineal}
+	"Ing. económica": {"Cálculo integral"}
+	"Control": {"Señales y Sistemas II"}
+	"Introduccion a Sistemas de Energia Electrica": {"Conversión Electromagnetica", "Transmisión y Distribución"} ,
+	"Instalaciones Electricas": {"Circuitos Electricos II"},
+	"Taller de Ingenieria": {"Electronica Digital I"},
+	"Optativa Administración I": {Ing. económica"},
+	"Asignatura Optativa (Electrotecnia)": {"Introduccion a Sistemas de Energia Electrica","Instalaciones Electricas"},
+	"Análisis de Sistemas de Potencia ": {"Introduccion a Sistemas de Energia Electrica"},
+	"Optativa Administración II": {"Ing. económica"},
+	"Asignatura Optativa (Sistemas de Potencia)" : {"Análisis de Sistemas de Potencia"} ,
+	"Asignatura Optativa (Innovación e Investigación)" : {"Análisis de Sistemas de Potencia", "Transmisión y Distribución"}
+
+
+
