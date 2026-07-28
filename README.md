@@ -99,11 +99,11 @@ Por defecto la aplicación web se sirve en:
 
 5. Uso general
 
-1. Abrir el navegador en `http://localhost:5173`.
-2. Seleccionar o crear un plan de estudio.
-3. Registrar materias y sus prerrequisitos.
-4. Configurar el número máximo de materias por semestre.
-5. Ejecutar la simulación para obtener el plan de semestres sugerido y la cantidad mínima de semestres para graduarse. listo que faltaria agregar al readme
+    1. Abrir el navegador en `http://localhost:5173`.
+    2. Seleccionar o crear un plan de estudio.
+    3. Registrar materias y sus prerrequisitos.
+    4. Configurar el número máximo de materias por semestre.
+    5. Ejecutar la simulación para obtener el plan de semestres sugerido y la cantidad mínima de semestres para graduarse.
 
 ## Advertencia
   El archivo `backend/src/main/resources/application.properties` incluido en el repositorio trae un valor de ejemplo en `spring.datasource.password`. Reemplázalo 
