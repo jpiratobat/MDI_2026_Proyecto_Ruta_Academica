@@ -53,7 +53,7 @@ Antes de ejecutar el proyecto asegúrate de tener instalado:
 1. Clonar el repositorio
 
 ```
-git clonehttps://github.com/jpiratobat/MDI_2026_Proyecto_Ruta_Academica.git
+git clone https://github.com/jpiratobat/MDI_2026_Proyecto_Ruta_Academica.git
 cd MDI_2026_Proyecto_Ruta_Academica
 ```
 
